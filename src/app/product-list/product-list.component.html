@@ -1,0 +1,12 @@
+<div class="product-list">
+    <div class="header">
+        <h4>Categories</h4>
+        <button (click)="addCategory()">
+            <img src="../../assets/icons/add-icon.svg" alt=""/>
+            Add Category
+        </button>
+    </div>
+    <div class="items">
+        <app-product-item *ngFor="let product of products" routerLink="/detail/{{product.id}}" [item]=product></app-product-item>
+    </div>
+</div>

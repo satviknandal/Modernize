@@ -1,0 +1,53 @@
+/* NavComponent's private CSS styles */
+
+.navigation-container {
+  padding: 16px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset -7px 0 4px -7px var(--shadow-gray-color);
+  height: 100%;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--text-gray-color);
+      font-size: 14px;
+      line-height: 20px;
+      position: relative;
+
+      span {
+        background-color: var(--black-color);
+        color: var(--white-color);
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0px 6px;
+        border-radius: 8px;
+        position: absolute;
+        right: 16px;
+      }
+
+      img {
+        margin-right: 16px;
+      }
+
+      &:hover {
+        background: var(--blue-color);
+        color: var(--white-color);
+      }
+    }
+  }
+
+  div > label {
+    font-size: 12px;
+    color: var(--text-light-gray-color);
+    margin: 16px 0 12px 12px;
+    display: block;
+  }
+}

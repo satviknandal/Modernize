@@ -1,0 +1,11 @@
+/* DashboardComponent's private CSS styles */
+.main-section {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  app-product-list {
+    width: calc(100% - 250px);
+    box-sizing: border-box;
+  }
+}

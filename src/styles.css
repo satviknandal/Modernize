@@ -1,0 +1,38 @@
+/* Global Styles */
+* {
+  font-family: Inter, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'InterBold';
+  src: url('assets/fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  background-color: var(--background-color);
+  padding: 0;
+  margin: 0;
+}
+a {
+  cursor: pointer;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #131523;
+  --pink-color: #cf34c2;
+  --background-color: #F5F6FA;
+  --blue-color: #1E5EFF;
+  --text-gray-color: #5A607F;
+  --text-light-gray-color: #A1A7C4;
+  --shadow-gray-color: #D7DBEC;
+  --overlay-bg-color: #333752B2;
+}

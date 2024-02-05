@@ -1,0 +1,62 @@
+/* ProductItemComponent's private CSS styles */
+
+.product-item {
+  box-shadow: 0px 1px 4px 0px #15223214;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  .overlay {
+    background-color: transparent;
+    width: 350px;
+    height: 240px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    span {
+      display: flex;
+      align-items: center;
+      background-color: var(--white-color);
+      border-radius: 4px;  
+      padding: 6px 12px;
+      color: var(--blue-color);
+      font-size: 16px;
+      line-height: 24px;
+      display: none;
+      img {
+        margin-right: 6px;
+      }
+    }
+  }
+  .desc {
+    padding: 24px;
+
+    label {
+      font-family: InterBold, Helvetica, sans-serif;
+      display: block;
+      font-size: 16px;
+      color: var(--black-color);
+    }
+
+    span {
+      color: var(--text-gray-color);
+      font-size: 14px;
+      font-weight: 400; 
+    }
+  }
+
+  &:hover {
+    .overlay {
+      background-color: var(--overlay-bg-color);
+      border-radius: 8px;
+
+      span {
+        display: flex;
+      }
+    }
+  }
+}
